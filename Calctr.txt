@@ -1,0 +1,21 @@
+package com.app;
+	public class Calci {
+		public int add(int a,int b) {
+	return a+b;
+		}
+		public int div(int a,int b) {
+			return a/b;
+		}
+	}
+//Different package
+package com.test;
+import com.app.Calci;
+class Test1 {
+	public static void main(String[]args) {
+		//Test Data 1: 10,20
+		//call add(int,int)
+		Calci c=new Calci();
+		System.out.println(c.add(10,20)); //30
+		System.out.println(c.div(10,20));
+	}
+}
